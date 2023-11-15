@@ -1,0 +1,17 @@
+name: start
+
+on:
+  - pull_request
+
+jobs:
+  start:
+    name: start file
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Start
+        uses: actions/checkout@v3
+
+      - name: Start file
+        run: npm start
